@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 90%;
+        max-width: 900px;
+        height: auto; /* Adjust height to fit content */
+        border: 2px solid black;
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        margin: 10px auto; /* Center container on the page */
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .boxleft {
+        width: 45%;
+        border: 2px solid red;
+        background-color: yellow;
+        border-radius: 10px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: auto;
+      }
+
+      .boxright {
+        width: 45%;
+        border: 2px solid red;
+        background-color: blue;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box1,
+      .box2 {
+        width: 100%;
+        height: auto;
+        min-height: 80px; /* Ensure a minimum height for content */
+        background-color: aqua;
+        border: 1px solid black;
+        overflow: auto;
+        padding: 4px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      /* Media Query for Small Screens */
+      @media (max-width: 640px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .boxleft,
+        .boxright {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="boxleft">
+        <div class="box1">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
+          voluptatibus? Quam dolorum molestias ab recusandae cupiditate, dicta
+          amet voluptas ipsam est. Debitis iure similique possimus quidem quam
+          soluta ullam? Suscipit?
+        </div>
+
+        <div class="box2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          omnis, maiores illo hic quas consequatur voluptatem aspernatur
+          laborum, voluptatum, qui sunt voluptate eius at. Et ut deserunt enim
+          iusto. Dolorum aut beatae aliquid cumque nam ratione amet eaque
+          eligendi facere?
+        </div>
+      </div>
+
+      <div class="boxright">
+        <img src="image1.png" alt="Descriptive image">
+      </div>
+    </div>
+  </body>
+</html>
